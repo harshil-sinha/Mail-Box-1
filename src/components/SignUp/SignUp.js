@@ -2,6 +2,7 @@ import React from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { database } from '../../firebase';
+import Navbar2 from "../Navbar/Navbar2.js";
 
 const SignUp = () => {
   const history = useNavigate();
@@ -28,6 +29,7 @@ const SignUp = () => {
 
   return (
     <>
+    <Navbar2/>
       <section className="vh-100" style={{ backgroundColor: '#eee' }}>
         <div className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
@@ -37,7 +39,7 @@ const SignUp = () => {
                   <div className="row justify-content-center">
                     <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                       <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">
-                        Sign up
+                        Sign Up
                       </p>
 
                       <form
